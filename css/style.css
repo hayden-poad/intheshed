@@ -743,7 +743,7 @@
 
     .designs {
         height:fit-content;
-        grid-template-rows: fit-content fit-content;
+        grid-template-rows: 82.5vh fit-content;
         grid-template-columns:1fr;
     }
     .designs ul {
