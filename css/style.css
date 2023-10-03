@@ -790,7 +790,7 @@
     /* Container heights for phone */
 
     .index-hero, .furniture-hero, .about-hero {
-        min-height:unset;
+        min-height:300px;
     }
 }
 
