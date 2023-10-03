@@ -790,7 +790,7 @@
     /* Container heights for phone */
 
     .index-hero, .furniture-hero, .about-hero {
-        min-height:fit-content;
+        min-height:unset;
     }
 }
 
@@ -811,6 +811,7 @@
         padding-right:15px;
         position:relative;
         width:100%;
+        z-index:2;
     }
     .dropdown span ul {
         display:none;
