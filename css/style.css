@@ -512,13 +512,14 @@
 }
 .carousel {
     width:100%;
-    max-height:36vw;
+    height:max-content;
     display:flex;
     transition: transform 0.5s ease-in-out;
 }
 .carousel img {
     width:100%;
     height:max-content;
+    max-height:36vw;
     object-fit:cover;
 }
 .carousel-button {
@@ -750,7 +751,7 @@
         grid-area: 1 / 1 / 2 / -1;
         padding-bottom:0;
     }
-    .carousel {
+    .carousel img {
         max-height:60vw;
     }
 
@@ -784,6 +785,12 @@
     }
     .svg-flex-left, .svg-flex-right {
         grid-area: 2 / 1 / 3 / 2;
+    }
+
+    /* Container heights for phone */
+
+    .index-hero, .furniture-hero, .about-hero {
+        min-height:fit-content;
     }
 }
 
@@ -836,14 +843,7 @@
 
     .svg-flex-left, .svg-flex-right, .main-curve {
         display:none;
-    }   
-    
-    /* Container heights for phone */
-
-    .index-hero, .furniture-hero, .about-hero {
-        min-height:fit-content;
     }
-    
 }
 
 @media (max-width:475px) {}
