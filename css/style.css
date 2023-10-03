@@ -41,6 +41,7 @@
 .navigation {
     width:100%;
     height:9.5vh;
+    min-height:70px;
     background-color:black;
     display:flex;
     justify-content:space-between;
@@ -113,6 +114,7 @@
 .index-hero {
     width:100%;
     height:90.5vh;
+    min-height:500px;
     display:grid;
     grid-template-rows:1fr;
     grid-template-columns:1fr;
@@ -158,6 +160,7 @@
 .about-hero {
     width:100%;
     height:90.5vh;
+    min-height:500px;
     display:grid;
     grid-template-rows:1fr;
     grid-template-columns:1fr;
@@ -192,6 +195,7 @@
 .furniture-hero {
     width:100%;
     height:90.5vh;
+    min-height:500px;
     display:grid;
     grid-template-rows:1fr;
     grid-template-columns:1fr;
@@ -226,6 +230,7 @@
 .item {
     width:100%;
     height:82.5vh;
+    min-height:610px;
 }
 .item-img-img {
     width:80%;
@@ -449,6 +454,7 @@
 .designs {
     width:100%;
     height:fit-content;
+    min-height:610px;
     display:grid;
     grid-template-rows:1fr;
     grid-template-columns:60% 40%;
@@ -500,13 +506,13 @@
     position: relative;
     overflow: hidden;
     width:80%;
-    height:max-content;
     margin:0;
     padding: 0;
+    height:max-content;
 }
 .carousel {
     width:100%;
-    height:max-content;
+    max-height:36vw;
     display:flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -702,20 +708,7 @@
 
 /* Media Queries */
 
-@media (max-width:1536px) {
-
-    /* Container heights */
-
-    .navigation {
-        min-height:70px;
-    }
-    .index-hero, .furniture-hero, .about-hero {
-        min-height:610px;
-    }
-    .item, .designs {
-        min-height:610px;
-    }
-}
+@media (max-width:1536px) {}
 
 @media (max-width:1280px) {}
 
@@ -743,7 +736,7 @@
 
     .designs {
         height:fit-content;
-        grid-template-rows: 82.5vh fit-content;
+        grid-template-rows: fit-content fit-content;
         grid-template-columns:1fr;
     }
     .designs ul {
@@ -756,6 +749,9 @@
     .carousel-position {
         grid-area: 1 / 1 / 2 / -1;
         padding-bottom:0;
+    }
+    .carousel {
+        max-height:60vw;
     }
 
     /* Text underneath items */
@@ -840,7 +836,14 @@
 
     .svg-flex-left, .svg-flex-right, .main-curve {
         display:none;
-    }    
+    }   
+    
+    /* Container heights for phone */
+
+    .index-hero, .furniture-hero, .about-hero {
+        min-height:fit-content;
+    }
+    
 }
 
 @media (max-width:475px) {}
