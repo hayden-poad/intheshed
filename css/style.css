@@ -814,10 +814,11 @@
         right:0;
         background-color:black;
         z-index:2;
-        padding:30px 21px 15px 21px;
+        padding:25px 21px 15px 21px;
+        transform:translateY(5px);
         width:100vw;
     }
-    #menu:hover > ul, #menu:checked ~ .dropdown{
+    #menu:hover > ul, #menu:active ~ .dropdown{
         display:block;
         opacity:0.6;
     }
