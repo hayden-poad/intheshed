@@ -709,20 +709,22 @@
 
 /* Media Queries */
 
-@media (max-width:1536px) {}
-
-@media (max-width:1280px) {}
-
 @media (max-width:1024px) {
+    
+    /* Disable pan-x and zoom */
+
+    * {
+        touch-action:pan-y;
+    }
 
     /* Inline BG image */
-
+    
     .index-img {
         background-image:url("../images/hero/index-1.jpg");
     }
-
+    
     /* Hero title alignment */
-
+    
     .index-hero-content, .about-hero-content, .furniture-hero-content {
         padding-left:0;
         padding-right:0;
@@ -732,9 +734,9 @@
         width:100%;
         text-align:center;
     }
-
+    
     /* Text underneath carousel */
-
+    
     .designs {
         height:fit-content;
         grid-template-rows: fit-content fit-content;
@@ -754,9 +756,9 @@
     .carousel img {
         max-height:60vw;
     }
-
+    
     /* Text underneath items */
-
+    
     .item {
         height:fit-content;
         grid-template-rows: fit-content, fit-content;
