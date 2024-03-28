@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Keywords And Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--Link to CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Title-->
+    <title>In The Shed</title>
+    <!--Nav Logo-->
+    <link rel="icon" type="image/png" href="../images/logo/Intheshed_Logo_Logomark-white.png">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--Navigation-->
+
+        <div class="navigation" id="navigation">
+            <div class="brand">
+                <a href="../index.html"><img class="nav-logo" src="../images/logo/Intheshed_Logo_Logomark-white.png"></a>
+                <ul class="nav-ul">
+                    <li><a href="../index.html" class="li-left">In The Shed</a></li>
+                </ul>
+            </div>
+            <ul class="nav-ul nav-right">
+                <li><a href="../furniture.html">Furniture</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="material-symbols-outlined dropbtn" id="dropbtn" onclick="myFunction()">menu
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="../furniture.html">Furniture</a>
+                        <a href="../about.html">About</a>
+                        <a href="#footer" class="li-right">Contact</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Item 1 -->
+
+        <div class="designs">
+            <div class="carousel-position">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="../images/designs/vCoffeeTable/1.jpg">
+                        <img src="../images/designs/vCoffeeTable/2.jpg">
+                        <img src="../images/designs/vCoffeeTable/3.jpg">
+                    </div>
+                    <div class="button">
+                        <button class="carousel-button prev" onclick="prevImage()">&#10094;</button>
+                        <button class="carousel-button next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><h1>Valorous Coffee Table</h1></li>
+                <li><p>This Valorous Coffee Table features two drawers. The drawers are fitted to two way drawer runners, making them accessible from both sides of the table. As with other Valorous designs, the bendy plywood top wraps around the dresser and continues downwards to form legs, suspending the drawers above the ground. Horizontal recesses with a finger holds enable easy pull-out, replacing traditional drawer handles.</br></br>
+                Materials: 18mm Birch Plywood drawer fronts. Laminated 3mm Bendy plywood form the 'wrap around' edging, top and sides. 12 mm Plywood forms the construction of the Drawers. Colours on the table shown are Resene 'Pitch Black’ and Resene ‘Red Pepper’.</br></br>
+                Dimensions are 900mm wide, 450mm high, and 600mm deep. They can be tailored to suit.</br></br>
+                Pricing depends on design.</br></br>
+                Please contact me to discuss your ideas!</br></br>
+                Note: The wooden blocks underneath are temporary, they are not part of the design.</p></li>
+            </ul>
+        </div>
+        
+        <!-- Item 2 -->
+        
+        <div class="similar">
+            <h1>Similar Designs</h1>
+            <div class="similar-inner">
+                <div class="similar-content">
+                    <a class="a-s" href="../designs/vHallTable.html"><img src="../images/designs/vHallTable/1.jpg"></a>
+                    <a class="a-s" href="../designs/vHallTable.html"><h2>Valorous Hall Table</h2></a>
+                </div>
+                <div class="similar-content">
+                    <a class="a-s" href="../designs/vSmallboy.html"><img src="../images/designs/vSmallboy/1.jpg"></a>
+                    <a class="a-s" href="../designs/vSmallboy.html"><h2>Valorous Smallboy</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer" id="footer">
+            <ul>
+                <li><h1>Contact</h1></li>
+                <li class="li-padding"><p>Craig Poad</p></li>
+                <li class="li-padding"><p><a href="mailto:intheshednz@gmail.com">intheshednz@gmail.com</a></p></li>
+                <li class="li-padding"><p><a href="tel:027-249-3732">0272493732</a></p></li>
+                <li><p>Wellington, New Zealand</p></li>
+            </ul>
+            <div class="footer-icons">
+                <span class="material-symbols-outlined" id="arrow"><a href="#navigation" class="arrow">arrow_upward</a></span>
+                <a href="https://www.facebook.com/InTheShed17/" target="_blank" class="fa fa-facebook" id="fa"></a>
+                <a href="https://www.instagram.com/intheshednz/" target="_blank" class="fa fa-instagram" id="fa"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/app.js"></script>
+</body>
+</html>
