@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Keywords And Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--Link to CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Title-->
+    <title>In The Shed</title>
+    <!--Nav Logo-->
+    <link rel="icon" type="image/png" href="../images/logo/Intheshed_Logo_Logomark-white.png">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--Navigation-->
+
+        <div class="navigation" id="navigation">
+            <div class="brand">
+                <a href="../index.html"><img class="nav-logo" src="../images/logo/Intheshed_Logo_Logomark-white.png"></a>
+                <ul class="nav-ul">
+                    <li><a href="../index.html" class="li-left">In The Shed</a></li>
+                </ul>
+            </div>
+            <ul class="nav-ul nav-right">
+                <li><a href="../furniture.html">Furniture</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="material-symbols-outlined dropbtn" id="dropbtn" onclick="myFunction()">menu
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="../furniture.html">Furniture</a>
+                        <a href="../about.html">About</a>
+                        <a href="#footer" class="li-right">Contact</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Item 1 -->
+
+        <div class="designs">
+            <div class="carousel-position">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="../images/designs/tiltDiningTable/1.jpg">
+                        <img src="../images/designs/tiltDiningTable/2.jpg">
+                        <img src="../images/designs/tiltDiningTable/3.jpg">
+                        <img src="../images/designs/tiltDiningTable/4.jpg">
+                        <img src="../images/designs/tiltDiningTable/5.jpg">
+                        <img src="../images/designs/tiltDiningTable/6.jpg">
+                        <img src="../images/designs/tiltDiningTable/7.jpg">
+                        <img src="../images/designs/tiltDiningTable/8.jpg">
+                        <img src="../images/designs/tiltDiningTable/9.jpg">
+                    </div>
+                    <div class="button">
+                        <button class="carousel-button prev" onclick="prevImage()">&#10094;</button>
+                        <button class="carousel-button next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><h1>Tilt Dining Table</h1></li>
+                <li><h2>Table - $4000.00</h2></li>
+                <li><h2>Bench Seats - $1250.00 each</h2></li>
+                <li><p>Introducing the Tilt Dining Table and Tilt Bench Seats; an original design with
+                    modern clean lines. A design with a distinct difference that will be a real
+                    showstopper at your next dinner party!</br></br>
+                    Materials: A combination of European Birch Plywood and High Pressure
+                    Laminate (HPL), an ideal surface for table tops as it is easy to clean and maintain.</br></br>
+                    The Tilt Dining Table and Bench Seats can be customised to suit alternative
+                    dimensions and HPL colours.</br></br>
+                    Dimensions of the Tilt Dining Table shown 2350mm long by 1000mm wide by 730mm high.</br></br>
+                    Dimensions of the Tilt Bench Seats shown 1520mm long by 390mm wide by 450mm high.</p></li>
+            </ul>
+        </div>
+        
+        <!-- Item 2 -->
+        
+        <div class="similar">
+            <h1>Similar Designs</h1>
+            <div class="similar-inner">
+                <div class="similar-content">
+                    <a class="a-s" href="../designs/kwilaOutdoorTable.html"><img src="../images/designs/kwilaOutdoorTable/1.jpg"></a>
+                    <a class="a-s" href="../designs/kwilaOutdoorTable.html"><h2>Kwila Outdoor Table</h2></a>
+                </div>
+                <div class="similar-content">
+                    <a class="a-s" href="../designs/tiltDesk.html"><img src="../images/designs/tiltDesk/1.jpg"></a>
+                    <a class="a-s" href="../designs/tiltDesk.html"><h2>Tilt Desk</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer" id="footer">
+            <ul>
+                <li><h1>Contact</h1></li>
+                <li class="li-padding"><p>Craig Poad</p></li>
+                <li class="li-padding"><p><a href="mailto:intheshednz@gmail.com">intheshednz@gmail.com</a></p></li>
+                <li class="li-padding"><p><a href="tel:027-249-3732">0272493732</a></p></li>
+                <li><p>Wellington, New Zealand</p></li>
+            </ul>
+            <div class="footer-icons">
+                <span class="material-symbols-outlined" id="arrow"><a href="#navigation" class="arrow">arrow_upward</a></span>
+                <a href="https://www.facebook.com/InTheShed17/" target="_blank" class="fa fa-facebook" id="fa"></a>
+                <a href="https://www.instagram.com/intheshednz/" target="_blank" class="fa fa-instagram" id="fa"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/app.js"></script>
+</body>
+</html>
